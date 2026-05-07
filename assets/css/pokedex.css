@@ -84,6 +84,24 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    transition: transform .15s ease, filter .15s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    transition: transform .15s ease,
+    filter .15s ease,
+    box-shadow .15s ease;
+}
+
+.pokemon:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.pokemon:active {
+    transform: scale(.95);
+    filter: brightness(.9);
 }
 
 .pokemon .number {
